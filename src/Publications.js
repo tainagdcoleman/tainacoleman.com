@@ -8,7 +8,7 @@ import { GrDocumentPdf } from 'react-icons/gr';
 const websites = {
     "Tainã Coleman": "https://tainacoleman.com",
     "Rafael Ferreira da Silva": "https://rafaelsilva.com/",
-    "Henri Cassanova": "https://henricasanova.github.io/",
+    "Henri Casanova": "https://henricasanova.github.io/",
     "Ewa Deelman": "https://deelman.isi.edu/",
     "Ju Cheol Moon": "https://scholar.google.com/citations?user=0Yw0wbYAAAAJ&hl=en",
     "Ty Gwartney": "https://ty-gwartney.github.io/",
@@ -19,7 +19,7 @@ const pubs = [
     {
         "title": "Evaluating energy-aware scheduling algorithms for I/O-intensive scientific workflows",
         "venue": "International Conference on Computational Science (ICCS)",
-        "authors": ["Tainã Coleman", "Henri Cassanova", "Ty Gwartney", "Rafael Ferreira da Silva"],
+        "authors": ["Tainã Coleman", "Henri Casanova", "Ty Gwartney", "Rafael Ferreira da Silva"],
         "social": {
             "pdf": "https://rafaelsilva.com/files/publications/coleman2021iccs.pdf"
         },
