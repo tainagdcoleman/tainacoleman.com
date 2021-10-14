@@ -11,6 +11,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 import Publications from './Publications';
+import Projects from './Projects';
 import About from './About';
 import Home from './Home';
 
@@ -27,7 +28,7 @@ function App() {
           <Nav className="mr-auto">
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/publications">Publications</Nav.Link>
-            {/* <Nav.Link href="/projects">Projects</Nav.Link> */}
+            <Nav.Link href="/projects">Projects</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -40,9 +41,9 @@ function App() {
           <Route path="/publications">
             <Publications />
           </Route>
-          {/* <Route path="/projects">
+          <Route path="/projects">
             <Projects />
-          </Route> */}
+          </Route>
           <Route path="/">
             <Home />
           </Route>
