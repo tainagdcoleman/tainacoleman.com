@@ -26,7 +26,7 @@ function Projects() {
 
     const panel = projects.map(project => {
         const links = Object.entries(project.links).map(([social, url], i) => {
-            if (social == "wfcommons") {
+            if (social === "wfcommons") {
                 return (
                     <a href={url}>
                         <img 
