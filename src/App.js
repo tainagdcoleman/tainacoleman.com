@@ -21,7 +21,7 @@ const SOCIAL_STYLE = {height: 35, width: 35};
 function App() {
   return (
     <Router>
-      <Navbar bg="primary" expand="sm" className="mb-2">
+      <Navbar bg="light" expand="sm" className="mb-2">
         <Navbar.Brand href="/">Tainã Gariglio Dias Coleman</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -61,6 +61,7 @@ function App() {
           <SocialIcon key='social-twitter' url="https://twitter.com/tainagdcoleman" className="m-1" style={SOCIAL_STYLE} />
           <SocialIcon key='social-linkedin' url="https://www.linkedin.com/in/tainacoleman/" className="m-1" style={SOCIAL_STYLE} />
           <SocialIcon key='social-github' url="https://github.com/tainagdcoleman" className="m-1" style={SOCIAL_STYLE} />
+          <SocialIcon key='social-scholar' url="https://scholar.google.com/citations?user=xFB72yMAAAAJ&hl=en" className="m-1" style={SOCIAL_STYLE} />
         </Nav>
       </Navbar>
     </Router>
