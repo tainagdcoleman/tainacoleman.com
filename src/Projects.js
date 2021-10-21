@@ -8,16 +8,25 @@ const SOCIAL_STYLE = {height: 25, width: 25};
 
 const projects = [
     {
-        name: 'WorkflowHub',
+        name: 'WfCommons',
         links: {
             'youtube': 'https://www.youtube.com/watch?v=3LhcWa-T3MQ',
             'github': 'https://www.github.com',
             'wfcommons': "https://wfcommons.org"
         },
         description: (
-            <p>
-                
-            </p>
+            
+            <Col>
+                <p>
+                WfCommons is a framework for enabling scientific workflow research and development. It provides foundation tools for analyzing workflow execution instances, generating workflow recipes, and generating synthetic, yet realistic, workflow instances. The synthetic instances can then be used to develop new techniques, algorithms and systems that can overcome the challenges of efficient and robust execution of ever larger workflows on increasingly complex distributed infrastructures. 
+                </p>
+                <p>
+                My most recent contribution to this project is the component called <b>WfChef</b> which is responsible for detecting patterns in the structure of sample graphs to generate the synthetic graphs. WfChef brought scalability to WfCommons by allowing the framework to be used by any workflow application and generate synthetic instances of any size.
+                </p>
+                <p>
+                Currently, we are working on using the framework to develop Workflow Benchmarks...
+                </p>
+            </Col>
         )
     }
 ]

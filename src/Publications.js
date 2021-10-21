@@ -16,6 +16,16 @@ const websites = {
 }
 
 const pubs = [
+    {   "title": "WfCommons: A Framework for Enabling Scientific Workflow Research and Development",
+        "venue": "Future Generation Computer Systems",
+        "volume": "128",
+        "pages": "16-27",
+        "authors": ["Tainã Coleman","Henri Casanova", "Loïc Pottier", "Manav Kaushik", "Ewa Deelman", "Rafael Ferreira da Silva"],
+        "social":{
+            "pdf":"https://arxiv.org/abs/2105.14352",
+        },
+        "abstract": `Scientific workflows are a cornerstone of modern scientific computing. They are used to describe complex computational applications that require efficient and robust management of large volumes of data, which are typically stored/processed on heterogeneous, distributed resources. The workflow research and development community has employed a number of methods for the quantitative evaluation of existing and novel workflow algorithms and systems. In particular, a common approach is to simulate workflow executions. In previous works, we have presented a collection of tools that have been adopted by the community for conducting workflow research. Despite their popularity, they suffer from several shortcomings that prevent easy adoption, maintenance, and consistency with the evolving structures and computational requirements of production workflows. In this work, we present WfCommons, a framework that provides a collection of tools for analyzing workflow executions, for producing generators of synthetic workflows, and for simulating workflow executions. We demonstrate the realism of the generated synthetic workflows by comparing their simulated executions to real workflow executions. We also contrast these results with results obtained when using the previously available collection of tools. We find that the workflow generators that are automatically constructed by our framework not only generate representative same-scale workflows (i.e., with structures and task characteristics distributions that resemble those observed in real-world workflows), but also do so at scales larger than that of available real-world workflows. Finally, we conduct a case study to demonstrate the usefulness of our framework for estimating the energy consumption of large-scale workflow executions.`
+    },
     {
         "title": "A Community Roadmap for Scientific Workflows Research and Development",
         "venue": "arXiv preprint",
@@ -25,15 +35,15 @@ const pubs = [
         },
         "abstract": `The landscape of workflow systems for scientific applications is notoriously convoluted with hundreds of seemingly equivalent workflow systems, many isolated research claims, and a steep learning curve. To address some of these challenges and lay the groundwork for transforming workflows research and development, the WorkflowsRI and ExaWorks projects partnered to bring the international workflows community together. This paper reports on discussions and findings from two virtual "Workflows Community Summits" (January and April, 2021). The overarching goals of these workshops were to develop a view of the state of the art, identify crucial research challenges in the workflows community, articulate a vision for potential community efforts, and discuss technical approaches for realizing this vision. To this end, participants identified six broad themes: FAIR computational workflows; AI workflows; exascale challenges; APIs, interoperability, reuse, and standards; training and education; and building a workflows community. We summarize discussions and recommendations for each of these themes.`
     },
-    {
-        "title": "WfCommons: A Framework for Enabling Scientific Workflow Research and Development",
-        "venue": "arXiv preprint",
-        "authors": ["Tainã Coleman","Henri Casanova", "Loïc Pottier", "Manav Kaushik", "Ewa Deelman", "Rafael Ferreira da Silva"],
-        "social": {
-            "pdf": "https://arxiv.org/abs/2105.14352"
-        },
-        "abstract": `Scientific workflows are a cornerstone of modern scientific computing. They are used to describe complex computational applications that require efficient and robust management of large volumes of data, which are typically stored/processed on heterogeneous, distributed resources. The workflow research and development community has employed a number of methods for the quantitative evaluation of existing and novel workflow algorithms and systems. In particular, a common approach is to simulate workflow executions. In previous works, we have presented a collection of tools that have been adopted by the community for conducting workflow research. Despite their popularity, they suffer from several shortcomings that prevent easy adoption, maintenance, and consistency with the evolving structures and computational requirements of production workflows. In this work, we present WfCommons, a framework that provides a collection of tools for analyzing workflow executions, for producing generators of synthetic workflows, and for simulating workflow executions. We demonstrate the realism of the generated synthetic workflows by comparing their simulated executions to real workflow executions. We also contrast these results with results obtained when using the previously available collection of tools. We find that the workflow generators that are automatically constructed by our framework not only generate representative same-scale workflows (i.e., with structures and task characteristics distributions that resemble those observed in real-world workflows), but also do so at scales larger than that of available real-world workflows. Finally, we conduct a case study to demonstrate the usefulness of our framework for estimating the energy consumption of large-scale workflow executions.`
-    },
+    // {
+    //     "title": "WfCommons: A Framework for Enabling Scientific Workflow Research and Development",
+    //     "venue": "arXiv preprint",
+    //     "authors": ["Tainã Coleman","Henri Casanova", "Loïc Pottier", "Manav Kaushik", "Ewa Deelman", "Rafael Ferreira da Silva"],
+    //     "social": {
+    //         "pdf": "https://arxiv.org/abs/2105.14352"
+    //     },
+    //     "abstract": `Scientific workflows are a cornerstone of modern scientific computing. They are used to describe complex computational applications that require efficient and robust management of large volumes of data, which are typically stored/processed on heterogeneous, distributed resources. The workflow research and development community has employed a number of methods for the quantitative evaluation of existing and novel workflow algorithms and systems. In particular, a common approach is to simulate workflow executions. In previous works, we have presented a collection of tools that have been adopted by the community for conducting workflow research. Despite their popularity, they suffer from several shortcomings that prevent easy adoption, maintenance, and consistency with the evolving structures and computational requirements of production workflows. In this work, we present WfCommons, a framework that provides a collection of tools for analyzing workflow executions, for producing generators of synthetic workflows, and for simulating workflow executions. We demonstrate the realism of the generated synthetic workflows by comparing their simulated executions to real workflow executions. We also contrast these results with results obtained when using the previously available collection of tools. We find that the workflow generators that are automatically constructed by our framework not only generate representative same-scale workflows (i.e., with structures and task characteristics distributions that resemble those observed in real-world workflows), but also do so at scales larger than that of available real-world workflows. Finally, we conduct a case study to demonstrate the usefulness of our framework for estimating the energy consumption of large-scale workflow executions.`
+    // },
     {
         "title": "Evaluating energy-aware scheduling algorithms for I/O-intensive scientific workflows",
         "venue": "International Conference on Computational Science (ICCS)",

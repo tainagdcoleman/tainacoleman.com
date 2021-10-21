@@ -24,14 +24,17 @@ function Home() {
                 <Col>
                 
                     <h4 className="text-center">Tainã Gariglio Dias Coleman</h4>
-                    <p className="mt-3 text-center">
-                        I am a <b>Ph.D. student</b> at <a href="https://usc.edu">University of Southern California</a> under advisor Dr.<a href="https://rafaelsilva.com/">Rafael Ferreira da Silva</a>.
+                    <p className="mt-3 text-justified">
+                        I am a <b>Ph.D. student</b> at <a href="https://usc.edu">University of Southern California</a> under advisor <a href="https://rafaelsilva.com/">Dr. Rafael Ferreira da Silva</a>.
                         I have a <b>Bachelor's degree</b> in <b>Computer Engineering</b> from Universidade Federal de Itajubá in Brazil and a <b>Master's degree</b> in <b>Computer Science</b> from California State University, Long Beach.
+                    </p>
+                    <p>
+                        My current research is in <b>Scientific Workflows Structure and Benchmarks</b>. More specifically, I am contributing to a project called <a href="https://wfcommons.org/">WfCommons</a>, more information about this project in my <a href="https://tainacoleman.com/projects">Projects</a> tab.    
                     </p> 
                 </Col>
             </Row>
             <Row>
-                <Col className="text-center"><h5>Research Interests</h5></Col>
+                <Col className="text-center"><h5>Current Research Interests</h5></Col>
             </Row>
             <Row>
                 <Col>
@@ -44,11 +47,11 @@ function Home() {
                         <b>Distributed Computing</b> for HPC clusters. 
                     </p>
                 </Col>
-                {/* <Col>
+                <Col>
                     <p className="text-center">
-                        Using <b>Data Science</b> to 
+                        <b>Data Science</b>
                     </p>
-                </Col> */}
+                </Col>
             </Row>
         </Col>
       </Row>
