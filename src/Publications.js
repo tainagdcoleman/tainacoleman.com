@@ -75,7 +75,7 @@ const pubs = [
     },
     {
         "title": "WfChef: Automated Generation of Accurate Scientific Workflow Generators",
-        "venue": "arXiv preprint",
+        "venue": "17th IEEE eScience 2021",
         "authors": ["Tainã Coleman", "Henri Casanova", "Rafael Ferreira da Silva"],
         "social": {
             "pdf": "https://arxiv.org/pdf/2105.00129",
