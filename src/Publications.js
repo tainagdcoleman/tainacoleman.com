@@ -96,6 +96,16 @@ const pubs = [
     }
 ]
 
+const awards =[
+    {   "Title": "2022 Viterbi Graduate Student Awards",
+        "Description": "Best Research Assistant Award ",
+        "Institution": "University of Southern California",
+    //     "social":{
+    //         "pdf":"https://arxiv.org/abs/2105.14352",
+    //     }
+    },
+]
+
 const SOCIAL_STYLE = {height: 30, width: 30};
 const SOCIAL_CLASS_NAME = "mr-2";
 function getSocial(social, url) {
@@ -167,13 +177,31 @@ function Publications() {
         );
     });
 
+    const awardsitems = awards.map((award, i) => {
+        return(
+            <Card>
+                <Accordion.Toggle as={Card.Header} eventKey={`acc-${i}`} style={{cursor: 'pointer'}}>
+                    <b>{award.Title}</b>
+                    <br />
+                    {award.Description}
+                    <br />
+                    <em>{award.Institution}</em>
+                </Accordion.Toggle>
+            </Card>
+        );
+    });
+
     return (
         <Row>
             <Col>
-                <h4 className="text-center">Publications</h4>
-                <Accordion>
-                    {pubitems}
-                </Accordion>
+            <h4 className="text-center">Publications</h4>
+            <Accordion>
+                {pubitems}
+            </Accordion>
+            <h4 className="text-center">Awards</h4>
+            <Accordion>
+                {awardsitems}
+            </Accordion>
             </Col>
         </Row>
     );
