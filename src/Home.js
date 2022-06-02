@@ -28,15 +28,15 @@ function Home() {
             </Row>
             <Row>
                 <p className="text-left">
-                    <b>Scientific Workflows</b> structures, optimizations, benchmarks and energy effiency.
+                    <b  style={{color:"#659ebc"}}>Scientific Workflows</b> structures, optimizations, benchmarks and energy effiency.
                 </p>
             
                 <p className="text-left">
-                    <b>Distributed Computing</b> for HPC clusters. 
+                    <b  style={{color:"#659ebc"}}>Distributed Computing</b> for HPC clusters. 
                 </p>
             
                 <p className="text-left">
-                    <b>Data Science</b> 
+                    <b  style={{color:"#659ebc"}}>Modeling</b> of parallel and distributed systems.  
                 </p>
             </Row>
             
