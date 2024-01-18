@@ -21,10 +21,10 @@ const projects = [
                 WfCommons is a framework for enabling scientific workflow research and development. It provides foundation tools for analyzing workflow execution instances, generating workflow recipes, and generating synthetic, yet realistic, workflow instances. The synthetic instances can then be used to develop new techniques, algorithms and systems that can overcome the challenges of efficient and robust execution of ever larger workflows on increasingly complex distributed infrastructures. 
                 </p>
                 <p>
-                My most recent contribution to this project is the component called <b>WfChef</b> which is responsible for detecting patterns in the structure of sample graphs to generate the synthetic graphs. WfChef brought scalability to WfCommons by allowing the framework to be used by any workflow application and generate synthetic instances of any size.
+                My first contribution to this project is the component called <b>WfChef</b> which is responsible for detecting patterns in the structure of sample graphs to generate the synthetic graphs. WfChef brought scalability to WfCommons by allowing the framework to be used by any workflow application and generate synthetic instances of any size.
                 </p>
                 <p>
-                Currently, we are working on using the framework to develop Workflow Benchmarks...
+                Followed by <b>WfChef</b> and using its recipes, I develop <b>WfBench</b> which is benchmark generator for scientific workflows. WfBench is a tool that generates scientific workflows benchmarks based on real-world workflow instances. It is designed to allow for extensive customization of the tasks and the workflow structure and it can be used to evaluate the performance of workflow management systems, and to evaluate the performance of workflow algorithms and techniques.                
                 </p>
             </Col>
         )
