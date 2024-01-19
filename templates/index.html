@@ -1,0 +1,23 @@
+<!--index.html-->
+{% extends "layout.html" %}
+
+{% block content %}
+    <!-- bootstrap container -->
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='img/profile.png') }}" alt="Profile Picture" class="img-fluid profile-img">
+            </div>
+            <div class="col-md-8 mt-2">
+                <h1>Tainã Coleman</h1>
+                <p>
+                    I am a Schmidt AI in Science Postdoctoral Fellow at the San Diego Supercomputer Center under the mentorship of Dr. Ilkay Altintas and Dr. Tara Javidi. I have a Bachelor's degree in Computer Engineering from Universidade Federal de Itajubá in Brazil, a Master's degree in Computer Science from California State University, Long Beach, and a Ph.D. from University of Southern California.
+                </p>
+                <h2>Research Interests</h2>
+                <p>
+                    My research interests are in Scientific Workflows. In particular, my goal is to develop a better understanding of how workflow structure affects execution in high-performance computing environments. To this end, I develop algorithms, benchmarks, and data-driven approaches for extracting and exploiting structure in scientific workflows.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

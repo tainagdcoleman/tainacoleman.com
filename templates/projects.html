@@ -1,0 +1,23 @@
+<!--publications.html-->
+{% extends "layout.html" %}
+
+{% block content %}
+    <!-- bootstrap container -->
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col text-center">
+                <h1>Projects</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="list-group" id="pub-list">
+                    
+                    <li class="list-group-item">
+                        {% include "projects/wfcommons.html" %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
