@@ -22,3 +22,28 @@
 .custom-icon-size {
   font-size: 1.5em; /* Or any other size between 1em (default) and 2em (fa-2x equivalent) */
 }
+
+.shadow-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+}
