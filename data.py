@@ -1,22 +1,64 @@
 websites = {
-    "Tainã Coleman": "https://tainacoleman.com",
+    "Tainã Coleman": "https://Tainãcoleman.com",
     "Rafael Ferreira da Silva": "https://rafaelsilva.com/",
+    "Frédéric Suter": "https://www.ornl.gov/staff-profile/fred-suter",
     "Henri Casanova": "https://henricasanova.github.io/",
     "Ewa Deelman": "https://deelman.isi.edu/",
     "Ju Cheol Moon": "https://scholar.google.com/citations?user=0Yw0wbYAAAAJ&hl=en",
     "Ty Gwartney": "https://ty-gwartney.github.io/",
-    "Loïc Pottier": "https://loicpottier.com/"
+    "Loïc Pottier": "https://loicpottier.com/",
+    "Jared Coleman": "https://jaredraycoleman.com/",
+
+    "Hena Ahmed": "https://scil.ucsd.edu/hena-ahmed",
+    "Ravi Shende": "https://scil.ucsd.edu/ravi-shende",
+    "Ismael Perez": "https://scil.ucsd.edu/index.php/ismael-perez",
+    "Ïlkay Altintaş": "https://scil.ucsd.edu/ilkay/",
 }
 
 
 
 pubs = [
     {   
+        "title": "A terminology for scientific workflow systems",
+        "venue": "Future Generation Computer Systems",
+        "authors": [
+            "Frédéric Suter", "Tainã Coleman", "İlkay Altintaş", "Rosa M Badia", "Bartosz Balis", "Kyle Chard", "Iacopo Colonnelli", "Ewa Deelman", "Paolo Di Tommaso", "Thomas Fahringer", "Carole Goble", "Shantenu Jha", "Daniel S Katz", "Johannes Köster", "Ulf Leser", "Kshitij Mehta", "Hilary Oliver", "J-Luc Peterson", "Giovanni Pizzi", "Loïc Pottier", "Raül Sirvent", "Eric Suchyta", "Douglas Thain", "Sean R Wilkinson", "Justin M Wozniak", "Rafael Ferreira da Silva"
+        ],
+        "links":{
+            "pdf":"https://arxiv.org/pdf/2506.07838",
+        },
+        "abstract": (
+            "The term “scientific workflow” has evolved over the last two decades to encompass a broad range of compositions of interdependent compute tasks and data movements. It has also become an umbrella term for processing in modern scientific applications. Today, many scientific applications can be considered as workflows made of multiple dependent steps, and hundreds of workflow systems have been developed to manage and run these scientific workflows. However, no turnkey solution has emerged from the field to address the diversity of scientific processes and the infrastructure on which they are supposed to be implemented. Instead, new research problems requiring the execution of scientific workflows with some novel feature often lead to the development of an entirely new workflow system. A direct consequence of this situation is that many existing workflow management systems (WMSs) share some salient features, offer similar functionalities, and can manage the same categories of workflows but at the same time also have some distinct capabilities that can be important for specific applications. This situation makes researchers who develop workflows face the complex question of selecting a WMS. This selection can be driven by technical considerations, to find the system that is the most appropriate for their application and for the computing and storage resources available to them, or other factors such as reputation, adoption, strong community support, or long-term sustainability. To address this problem, a group of WMS developers and practitioners joined their efforts to produce a community-based terminology of WMSs. This paper summarizes their findings and introduces this new terminology to characterize WMSs. This terminology is composed of fives axes: workflow structure and characteristics, composition, orchestration, data management, and metadata capture. Each axis comprises several concepts that capture the prominent features of WMSs. Based on this terminology, this paper also presents a classification of 23 existing WMSs according to the proposed axes and terms."
+        )
+    },
+    {   
+        "title": "Banditware: A Contextual Bandit-based Framework for Hardware Prediction",
+        "venue": "To Appear at I4Sys @ Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2025",
+        "authors": ["Tainã Coleman", "Hena Ahmed", "Ravi Shende", "Ismael Perez", "Ïlkay Altintaş"],
+        "links":{
+            "pdf":"https://arxiv.org/pdf/2506.13730",
+        },
+        "abstract": (
+            "Distributed computing systems are essential for meeting the demands of modern applications, yet transitioning from single-system to distributed environments presents significant challenges. Misallocating resources in shared systems can lead to resource contention, system instability, degraded performance, priority inversion, inefficient utilization, increased latency, and environmental impact. "
+            "We present BanditWare, an online recommendation system that dynamically selects the most suitable hardware for applications using a contextual multi-armed bandit algorithm. BanditWare balances exploration and exploitation, gradually refining its hardware recommendations based on observed application performance while continuing to explore potentially better options. Unlike traditional statistical and machine learning approaches that rely heavily on large historical datasets, BanditWare operates online, learning and adapting in real-time as new workloads arrive. "
+            "We evaluated BanditWare on three workflow applications: Cycles (an agricultural science scientific workflow) BurnPro3D (a web-based platform for fire science) and a matrix multiplication application. Designed for seamless integration with the National Data Platform (NDP), BanditWare enables users of all experience levels to optimize resource allocation efficiently."
+        )
+    },
+    {
+        "title": "Workflows Community Summit 2024: Future Trends and Challenges in Scientific Workflows",
+        "venue": "osti.gov",
+        "authors": [
+            "Deborah Bard", "Kyle Chard", "Shaun de Witt", "Ian T Foster", "Carole Goble", "William Godoy", "Johan Gustafsson", "Utz-Uwe Haus", "Stephen Hudson", "Laila Los", "Drew Paine", "Frédéric Suter", "Logan Ward", "Sean Wilkinson", "Marcos Amaris", "Yadu Babuji", "Jonathan Bader", "Riccardo Balin", "Daniel Balouek", "Sarah Beecroft", "Khalid Belhajjame", "Rajat Bhattarai", "Wes Brewer", "Paul Brunk", "Silvina Caino-Lores", "Henri Casanova", "Daniela Cassol", "Jared Coleman", "Taina Coleman", "Iacopo Colonnelli", "Anderson Andrei Da Silva", "Daniel de Oliveira", "Pascal Elahi", "Nour Elfaramawy", "Wael Elwasif", "Brian Etz", "Thomas Fahringer", "Wesley Ferreira", "Rosa Filgueira", "Jacob Fosso Tande", "Luiz Gadelha", "Andy Gallo", "Daniel Garijo", "Yiannis Georgiou", "Philipp Gritsch", "Patricia Grubel", "Amal Gueroudji", "Quentin Guilloteau", "Carlo Hamalainen", "Rolando Hong Enriquez", "Lauren Huet", "Kevin Hunter Kesling", "Paula Iborra", "Shiva Jahangiri", "Jan Janssen", "Joe Jordan", "Sehrish Kanwal", "Liliane Kunstmann", "Fabian Lehmann", "Ulf Leser", "Peini Liu", "Jakob Luettgau", "Richard Lupat", "Jose M Fernandez", "Ketan Maheshwari", "Tanu Malik", "Jack Marquez", "Motohiko Matsuda", "Doriana Medic", "Somayeh Mohammadi", "Alberto Mulone", "John-Luke Navarro", "Kin Wai Ng", "Klaus Noelp", "Bruno P Kinoshita", "Ryan Prout", "Michael R Crusoe", "Sashko Ristov", "Stefan Robila", "Daniel Rosendo", "Billy Rowell", "Jedrzej Rybicki", "Hector Sanchez", "Nishant Saurabh", "Sumit Kumar Saurav", "Tom Scogland", "Dinindu Senanayake", "Woong Shin", "Raul Sirvent", "Tyler Skluzacek", "Barry Sly-Delgado", "Stian Soiland-Reyes", "Abel Souza", "Renan Souza", "Domenico Talia", "Nathan Tallent", "Lauritz Thamsen", "Mikhail Titov", "Benjamin Tovar", "Karan Vahi", "Eric Vardar-Irrgang", "Edite Vartina", "Yuandou Wang", "Merridee Wouters", "Qi Yu", "Ziad Al Bkhetan", "Mahnoor Zulfiqar"
+        ],
+        "links": {
+            "pdf": "https://www.osti.gov/servlets/purl/2474744"
+        },
+        "abstract": "The 2024 Workflows Community Summit report presents the outcomes of a three-day international gathering that brought together 109 experts from 18 countries to discuss future trends and challenges in scientific workflows. The summit focused on six key areas: time-sensitive workflows, convergence of AI and HPC workflows, multi-facility workflows, heterogeneous HPC environments, user experience and interfaces, and FAIR computational workflows. Discussions highlighted emerging challenges such as integrating AI with traditional HPC, managing workflows across diverse facilities, addressing heterogeneity in computing environments, and ensuring workflows are findable, accessible, interoperable, and reusable (FAIR). The report outlines recent advances, ongoing challenges, and provides recommendations for each topic area, emphasizing the need for standardization, improved interoperability, and the development of more sophisticated tools and frameworks to support the evolving landscape of scientific workflows in the era of exascale computing and AI integration."
+    },
+    {
         "title": "Automated generation of scientific workflow generators with WfChef",
         "venue": "Future Generation Computer Systems",
-        "volume": "147",	
-        "pages": "16-29",
-        "authors": ["Taina Coleman", "Henri Casanova", "Rafael Ferreira Da Silva"],
+        "authors": ["Tainã Coleman", "Henri Casanova", "Rafael Ferreira Da Silva"],
         "links":{
             "pdf":"https://www.sciencedirect.com/science/article/abs/pii/S0167739X23001711",
         },
@@ -26,7 +68,7 @@ pubs = [
     {
         "title": "Workflows Community Summit 2022: A Roadmap Revolution",
         "venue": "osti.gov",
-        "authors": ["Rafael Ferreira Da Silva", "Rosa Badia", "Venkat Bala", "Deborah Bard", "Peer-Timo Bremer", "Ian Buckley", "Silvina Caino-Lores", "Kyle Chard", "Carole Goble", "Shantenu Jha", "Daniel S Katz", "Daniel Laney", "Manish Parashar", "Fred Suter", "Nick Tyler", "Thomas Uram", "Ilkay Altintas", "Stefan Andersson", "William Arndt", "Juan Aznar", "Jonathan Bader", "Bartosz Balis", "Christopher Blanton", "Kelly Braghetto", "Aharon Brodutch", "Paul Brunk", "Henri Casanova", "Alba Lierta", "Justin Chigu", "Taina Coleman", "Nick Collier", "Iacopo Colonnelli", "Frederik Coppens", "Michael Crusoe", "Will Cunningham", "Bruno Kinoshita", "Paolo Di Tomasso", "Charles Doutriaux", "Matthew Downton", "Wael Elwasif", "Bjoern Enders", "Christopher Erdmann", "Thomas Fahringer", "Ludmilla Figueiredo", "Rosa Filgueira", "Martin Foltin", "Anne Fouilloux", "Luiz Gadelha", "Andy Gallo", "Artur Garcia", "Daniel Garijo", "Roman Gerlach", "Ryan E Grant", "Samuel Grayson", "Patricia Grubel", "Johan Gustafsson", "Valerie Hayot", "Oscar Hernandez Mendoza", "Marcus Hilbrich", "Annmary Justine", "Ian Laflotte", "Fabian Lehmann", "Andre Luckow", "Jakob Luettgau", "Ketan Maheshwari", "Motohiko Matsuda", "Doriana Medic", "Pete Mendygral", "Marek Michalewicz", "Jorji Nonaka", "Maciej Pawlik", "Loic Pottier", "Line Pouchard", "Mathias Putz", "Santosh Radha", "Lavanya Ramakrishnan", "Sashko Ristov", "Paul Romano", "Daniel Rosendo", "Martin Ruefenacht", "Katarzyna Rycerz", "Nishant Saurabh", "Volodymyr Savchenko", "Martin Schulz", "Christine Simpson", "Raul Sirvent", "Tyler Skluzacek", "Stian Reyes", "Renan Santos Souza", "Sreenivas R Sukumar", "Ziheng Sun", "Alan Sussman", "Douglas Thain", "Mikhail Titov", "Benjamin Tovar", "Aalap Tripathy", "Matteo Turilli", "Bartosz Tuznik", "Hubertus van Dam", "Aurelio Vivas", "Logan Ward", "Patrick Widener", "Sean Wilkinson", "Justyna Zawalska", "Mahnoor Zulfiqar"],
+        "authors": ["Rafael Ferreira Da Silva", "Rosa Badia", "Venkat Bala", "Deborah Bard", "Peer-Timo Bremer", "Ian Buckley", "Silvina Caino-Lores", "Kyle Chard", "Carole Goble", "Shantenu Jha", "Daniel S Katz", "Daniel Laney", "Manish Parashar", "Frédéric Suter", "Nick Tyler", "Thomas Uram", "Ilkay Altintas", "Stefan Andersson", "William Arndt", "Juan Aznar", "Jonathan Bader", "Bartosz Balis", "Christopher Blanton", "Kelly Braghetto", "Aharon Brodutch", "Paul Brunk", "Henri Casanova", "Alba Lierta", "Justin Chigu", "Tainã Coleman", "Nick Collier", "Iacopo Colonnelli", "Frederik Coppens", "Michael Crusoe", "Will Cunningham", "Bruno Kinoshita", "Paolo Di Tomasso", "Charles Doutriaux", "Matthew Downton", "Wael Elwasif", "Bjoern Enders", "Christopher Erdmann", "Thomas Fahringer", "Ludmilla Figueiredo", "Rosa Filgueira", "Martin Foltin", "Anne Fouilloux", "Luiz Gadelha", "Andy Gallo", "Artur Garcia", "Daniel Garijo", "Roman Gerlach", "Ryan E Grant", "Samuel Grayson", "Patricia Grubel", "Johan Gustafsson", "Valerie Hayot", "Oscar Hernandez Mendoza", "Marcus Hilbrich", "Annmary Justine", "Ian Laflotte", "Fabian Lehmann", "Andre Luckow", "Jakob Luettgau", "Ketan Maheshwari", "Motohiko Matsuda", "Doriana Medic", "Pete Mendygral", "Marek Michalewicz", "Jorji Nonaka", "Maciej Pawlik", "Loic Pottier", "Line Pouchard", "Mathias Putz", "Santosh Radha", "Lavanya Ramakrishnan", "Sashko Ristov", "Paul Romano", "Daniel Rosendo", "Martin Ruefenacht", "Katarzyna Rycerz", "Nishant Saurabh", "Volodymyr Savchenko", "Martin Schulz", "Christine Simpson", "Raul Sirvent", "Tyler Skluzacek", "Stian Reyes", "Renan Santos Souza", "Sreenivas R Sukumar", "Ziheng Sun", "Alan Sussman", "Douglas Thain", "Mikhail Titov", "Benjamin Tovar", "Aalap Tripathy", "Matteo Turilli", "Bartosz Tuznik", "Hubertus van Dam", "Aurelio Vivas", "Logan Ward", "Patrick Widener", "Sean Wilkinson", "Justyna Zawalska", "Mahnoor Zulfiqar"],
         "links": {
             "pdf": "https://www.osti.gov/servlets/purl/2006942"
         },
@@ -36,7 +78,7 @@ pubs = [
         "title": "Wfbench: Automated generation of scientific workflow benchmarks",
         "venue": "2022 IEEE/ACM International Workshop on Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS)",
         "pages": "100-111",
-        "authors": ["Taina Coleman", "Henri Casanova", "Ketan Maheshwari", "Loïc Pottier", "Sean R Wilkinson", "Justin Wozniak", "Frédéric Suter", "Mallikarjun Shankar", "Rafael Ferreira Da Silva"],
+        "authors": ["Tainã Coleman", "Henri Casanova", "Ketan Maheshwari", "Loïc Pottier", "Sean R Wilkinson", "Justin Wozniak", "Frédéric Suter", "Mallikarjun Shankar", "Rafael Ferreira Da Silva"],
         "links":{
             "pdf":"https://ieeexplore.ieee.org/abstract/document/10024036",
         },
@@ -68,12 +110,12 @@ pubs = [
         "links": {
             "pdf": "https://rafaelsilva.com/files/publications/coleman2021iccs.pdf"
         },
-        "abstract": ("Improving energy efficiency has become necessary to enable sustainable computational science. At the same time, scientific workflows are key in facilitating distributed computing in virtually all domain sciences. As data and computational requirements increase, I/O-intensive workflows have become prevalent. In this work, we evaluate the ability of two popular energy-aware workflow scheduling algorithms to provide effective schedules for this class of workflow applications, that is, schedules that strike a good compromise between workflow execution time and energy consumption. These two algorithms make decisions based on a widely used power consumption model that simply assumes linear correlation to CPU usage. Previous work has shown this model to be inaccurate, in particular for modeling power consumption of I/O-intensive workflow executions, and has proposed an accurate model. We evaluate the effectiveness of the two aforementioned algorithms based on this accurate model. We find that, when making their decisions, these algorithms can underestimate power consumption by up to 360%, which makes it unclear how well these algorithm would fare in practice. To evaluate the benefit of using the more accurate power consumption model in practice, we propose a simple scheduling algorithm that relies on this model to balance the I/O load across the available compute resources. Experimental results show that this algorithm achieves more desirable compromises between energy consumption and workflow execution time than the two popular algorithms.")
+        "abstract": ("Improving energy efficiency has become necessary to enable susTainãble computational science. At the same time, scientific workflows are key in facilitating distributed computing in virtually all domain sciences. As data and computational requirements increase, I/O-intensive workflows have become prevalent. In this work, we evaluate the ability of two popular energy-aware workflow scheduling algorithms to provide effective schedules for this class of workflow applications, that is, schedules that strike a good compromise between workflow execution time and energy consumption. These two algorithms make decisions based on a widely used power consumption model that simply assumes linear correlation to CPU usage. Previous work has shown this model to be inaccurate, in particular for modeling power consumption of I/O-intensive workflow executions, and has proposed an accurate model. We evaluate the effectiveness of the two aforementioned algorithms based on this accurate model. We find that, when making their decisions, these algorithms can underestimate power consumption by up to 360%, which makes it unclear how well these algorithm would fare in practice. To evaluate the benefit of using the more accurate power consumption model in practice, we propose a simple scheduling algorithm that relies on this model to balance the I/O load across the available compute resources. Experimental results show that this algorithm achieves more desirable compromises between energy consumption and workflow execution time than the two popular algorithms.")
     },
     {
         "title": "Workflows Community Summit: Bringing the Scientific Workflows Community Together",
         "venue": "Zenodo",
-        "authors": ["Rafael Ferreira da Silva", "Henri Casanova", "Kyle Chard", "Dan Laney", "Dong Ahn", "Shantenu Jha", "Carole Goble", "Lavanya Ramakrishnan", "Luc Peterson", "Bjoern Enders", "Douglas Thain", "Ilkay Altintas", "Yadu Babuji", "Rosa M. Badia", "Vivien Bonazzi", "Taina Coleman", "Michael Crusoe", 
+        "authors": ["Rafael Ferreira da Silva", "Henri Casanova", "Kyle Chard", "Dan Laney", "Dong Ahn", "Shantenu Jha", "Carole Goble", "Lavanya Ramakrishnan", "Luc Peterson", "Bjoern Enders", "Douglas Thain", "Ilkay Altintas", "Yadu Babuji", "Rosa M. Badia", "Vivien Bonazzi", "Tainã Coleman", "Michael Crusoe", 
         "Ewa Deelman", "Frank Di Natale", "Paolo Di Tommaso", "Thomas Fahringer", "Rosa Filgueira", "Grigori Fursin", "Alex Ganose", "Bjorn Gruning", "Daniel S. Katz", "Olga Kuchar", "Ana Kupresanin", "Bertram Ludascher", "Ketan Maheshwari", "Marta Mattoso", "Kshitij Mehta", "Todd Munson", "Jonathan Ozik", "Tom Peterka", "Loic Pottier", "Tim Randles", "Stian Soiland-Reyes", "Benjamin Tovar", "Matteo Turilli", "Thomas Uram", "Karan Vahi", "Michael Wilde", "Matthew Wolf", "Justin Wozniak"],
         "links": {
             "pdf": "https://arxiv.org/pdf/2103.09181"
@@ -96,7 +138,7 @@ pubs = [
         "authors": ["Tainã Coleman", "Henri Casanova", "Rafael Ferreira da Silva"],
         "links": {
             "pdf": "https://arxiv.org/pdf/2105.00129",
-            "github": "https://github.com/tainagdcoleman/wfchef"
+            "github": "https://github.com/Tainãgdcoleman/wfchef"
         },
         "abstract": ("Scientific workflow applications have become mainstream and their automated and efficient execution on large-scale compute platforms is the object of extensive research and development. For these efforts to be successful, a solid experimental methodology is needed to evaluate workflow algorithms and systems. A foundation for this methodology is the availability of realistic workflow instances. Dozens of workflow instances for a few scientific applications are available in public repositories. While these are invaluable, they are limited: workflow instances are not available for all application scales of interest. To address this limitation, previous work has developed generators of synthetic, but representative, workflow instances of arbitrary scales. These generators are popular, but implementing them is a manual, labor-intensive process that requires expert application knowledge. As a result, these generators only target a handful of applications, even though hundreds of applications use workflows in production."
         "In this work, we present WfChef, a framework that fully automates the process of constructing a synthetic workflow generator for any scientific application. Based on an input set of workflow instances, WfChef automatically produces a synthetic workflow generator. We define and evaluate several metrics for quantifying the realism of the generated workflows. Using these metrics, we compare the realism of the workflows generated by WfChef generators to that of the workflows generated by the previously available, hand-crafted generators. We find that the WfChef generators not only require zero development effort (because it is automatically produced), but also generate workflows that are more realistic than those generated by hand-crafted generator.")
@@ -107,7 +149,7 @@ pubs = [
         "authors": ["Tainã Coleman", "Ju Cheol Moon"],
         "links": {
             "pdf": "https://easychair.org/publications/open/1Rr8",
-            "github": "https://github.com/tainagdcoleman/sharkid"
+            "github": "https://github.com/Tainãgdcoleman/sharkid"
         },
         "abstract": ("Recent progress in animal biometrics has revolutionized wildlife research. Cutting edge techniques allow researchers to track individuals through noninvasive methods of recognition that are not only more reliable, but also applicable to large, hard-to-find, and otherwise difficult to observe animals. In this research, we propose a metric for boundary descriptors based on bipartite perfect matching applied in shark dorsal fins. In order to identify a shark, we first take a fin contour and transform it to a normalized coordinate system so that we can analyze images of sharks regardless of orientation and scale. Finally, we propose a metric scheme that performs a minimum weight perfect matching in a bipartite graph. The experimental results show that our metric is applicable to identify and track individuals from visual data.")
     }
