@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: jaredraycoleman/taina:latest
+          image: jaredraycoleman/tainacoleman.com:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -30,7 +30,7 @@ spec:
             - name: FLASK_ENV
               value: "production"
             - name: DEPLOY_ID # for easy re-deployment
-              value: DEPLOYID-da1c966a5122e53c762ba3c25dd9f08c
+              value: DEPLOYID-02474ebde79915c470dc2cffb40cc6cf
             - name: SECRET_KEY
               valueFrom:
                 secretKeyRef:
