@@ -147,7 +147,7 @@ html {
 /* Hero Section */
 .hero {
     margin-top: 70px;
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
     background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #faf5ff 100%);
     position: relative;
     overflow: hidden;
@@ -170,17 +170,17 @@ html {
     grid-template-columns: 1fr auto;
     gap: 3rem;
     align-items: center;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -188,33 +188,33 @@ html {
 }
 
 .hero-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .hero-affiliation {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .education {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding-left: 1rem;
     border-left: 3px solid var(--primary-light);
 }
 
 .education p {
     color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
 }
 
 .hero-photo {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--bg-primary);
@@ -234,7 +234,7 @@ html {
 
 /* Sections */
 .section {
-    padding: 4rem 2rem;
+    padding: 2.5rem 2rem;
 }
 
 .section-white {
@@ -246,12 +246,12 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--text-primary);
     text-align: center;
@@ -259,29 +259,29 @@ html {
 }
 
 .section-divider {
-    width: 80px;
-    height: 4px;
+    width: 60px;
+    height: 3px;
     background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
-    margin: 0 auto 3rem;
+    margin: 0 auto 1.5rem;
     border-radius: 2px;
 }
 
 /* Research Interests */
 .research-content {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .lead {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 1.7;
     text-align: center;
 }
 
 /* Publications */
 .publications-list {
-    max-width: 1000px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -351,8 +351,8 @@ html {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
+    gap: 1.5rem;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -573,24 +573,34 @@ html {
 
     .hero {
         margin-top: 70px;
-        padding: 3rem 1.5rem;
+        padding: 1.5rem 1.5rem;
     }
 
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 1.25rem;
     }
 
     .hero-photo {
         margin: 0 auto;
+        width: 200px;
+        height: 200px;
     }
 
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .education {
+        border-left: none;
+        border-top: 3px solid var(--primary-light);
+        padding-left: 0;
+        padding-top: 0.75rem;
     }
 
     .section {
-        padding: 3rem 1.5rem;
+        padding: 2rem 1.5rem;
     }
 
     .section-title {
