@@ -8,11 +8,18 @@ navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
+// Close mobile menu when clicking on a link (instant close, no animation)
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
+        // Add instant-close class to skip transitions
+        navLinks.style.transition = 'none';
         navLinks.classList.remove('active');
         navToggle.classList.remove('active');
+
+        // Reset transitions after a brief delay
+        setTimeout(() => {
+            navLinks.style.transition = '';
+        }, 50);
     });
 });
 
