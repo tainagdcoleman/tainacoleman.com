@@ -64,3 +64,5 @@ yarn-error.log*
 .cache/
 *.bak
 *.tmp
+
+Miniconda3-latest-Linux-x86_64.sh
