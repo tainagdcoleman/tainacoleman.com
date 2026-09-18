@@ -398,6 +398,12 @@ html {
     text-decoration: underline;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
 /* CV Section */
 .cv-content {
     text-align: center;
